@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Donut Shop</title>
+        <link rel="stylesheet" href="styles/main.css" />
+        <script src="https://fb.me/react-0.14.3.js"></script>
+        <script src="https://fb.me/react-dom-0.14.3.js"></script>
+    </head>
+    <body>
+        <section id="wrapper">
+            <header>
+                <h1 id="fancy">Ali Baba's Fabulous Donuts</h1>
+                <p><i>Baked to take you on a magical ride!</i></p>
+            </header>
+
+            <main>
+                <!--these divs will respectively generate pre-made JS messages and React components-->
+                <h2>Welcome, admin!</h2>
+                <p>This is the database center for Ali Baba's Fabulous Donuts.<br/> All donuts currently for sale are listed below,
+                     ordered by their ID in the database.</p>
+                <div id="content"></div>
+                <script type="module" src="js_actual/admin.js"></script>
+                <p>You can change the selection by using the prompts and buttons below. Note that every donut has a unique
+                    ID number, a name, a description, and a price (in US dollars, decimal format; please write as 2.99, not $2.99).
+                    <br /><br /><br /><br /> <u>For the following buttons:</u></p>
+                <ul>
+                    <li><b>Add</b>: input a name, description, and price. The new donut's ID is automatically added.</li>
+                    <li><b>Update</b>: input an ID, then give the updated name, description, and price for the corresponding donut.
+                         Those values are used to update the donut's info. (Inputs left blank will remain unchanged.)</li>
+                    <li><b>Delete</b>: input just the ID. The corresponding donut will be deleted from the list.</li>
+                </ul>
+                <br />
+                <br />
+                <section style="display: grid; justify-content: center; grid-template-columns: auto auto;">
+                    <label for="id">ID:</label>
+                        <input type="text" id="id" style="width: 500px">
+                    
+                    <label for="name">Name: </label>
+                        <input type="text" id="name" style="width: 500px">
+                    
+                    <label for="desc">Description: &nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="text" id="desc" style="width: 500px">
+                    
+                    <label for="price">Price:</label>
+                        <input type="text" id="price" style="width: 500px">
+                </section>
+                <br />
+                <div>
+                    <section>
+                        <button id="add">Add</button>
+                        <button id="update">Update</button>
+                        <button id="delete">Delete</button>
+                    </section>
+                </div>
+                <section id="notify"></section>
+                
+            </main>
+
+            <footer>
+                <hr />
+                <p id="tiny">© Ali Baba's Fabulous Donuts, 2018-2023. Located in Dearborn, MI.</p>
+            </footer>
+            
+        </section>
+    </body>
+</html>
