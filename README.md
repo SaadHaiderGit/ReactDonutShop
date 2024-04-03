@@ -2,7 +2,7 @@
 
 This is a very simple website for a donut shop website, making use of React components to create a dynamic site that can list various donuts for sale. You can also access a donut database through an adminstrative page, allowing you to make changes to the donut menu.
 
-## Installation
+## Setup and Usage
 
 This website was made using XAMPP's Apache server, allowing for PHP and mySQL/MariaDB use. You can download XAMPP at https://www.apachefriends.org/. Make sure to have Apache, MySQL, PHP, and phpMyAdmin checked when  running the installation wizard.
 
